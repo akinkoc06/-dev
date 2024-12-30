@@ -67,7 +67,7 @@
 
                 }
                 Console.WriteLine($"{"Numarası",-15} {"Adı",-10} {"Soyadı",-10} {"Vize Notu",-15} {"Final Notu",-15} {"Ortalama",-15} {"Harf Notu",-15} ");
-                Console.WriteLine(new string('-', 30));
+                Console.WriteLine(new string('-', 100));
 
                 for (int i = 0; i < ogrencisayi; i++)
                 {
