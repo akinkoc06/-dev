@@ -21,10 +21,10 @@
                     long ogrencinumara = long.Parse(Console.ReadLine());
 
                     Console.Write($"{i + 1}. Öğrenci Adı:");
-                    string ogrenciadı = Console.ReadLine();
+                    string ogrenciadı = Console.ReadLine().ToUpper();
 
                     Console.Write($"{i + 1}. Öğrenci Soyadı:");
-                    string ogrencisoyad = Console.ReadLine();
+                    string ogrencisoyad = Console.ReadLine().ToUpper();
 
 
                     Console.Write($"{i + 1}. Vize Notu:");
