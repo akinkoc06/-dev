@@ -50,7 +50,7 @@
                     double ortalama = vizenotu * 0.4 + finalnotu * 0.6;
                     string harfnotu = HarfNotuHesapla(ortalama);
 
-                    bilgiler[i, 0] = ogrencinumara.ToString("F2");
+                    bilgiler[i, 0] = ogrencinumara.ToString();
                     bilgiler[i, 1] = ogrenciadı;
                     bilgiler[i, 2] = ogrencisoyad;
                     bilgiler[i, 3] = vizenotu.ToString("F2");
