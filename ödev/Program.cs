@@ -29,9 +29,18 @@
 
                     Console.Write($"{i + 1}. Vize Notu:");
                     double vizenotu = double.Parse(Console.ReadLine());
-                    if(vizenotu <=0 && vizenotu >= 100)
+                   while (true)
 {
-    Console.WriteLine("Sadece 0 ile 100 arası sayıları kullanın.");
+    if (vizenotu <= 0 || vizenotu >= 100)
+    {
+        Console.WriteLine("Sadece 0 ile 100 arası sayıları kullanın.");
+    }
+    else
+    {
+        vizenotu = double.Parse(Console.ReadLine());
+
+        break;
+    }
 }
 
 
@@ -40,11 +49,18 @@
 
                     Console.Write($"{i + 1}. Final Notu:");
                     double finalnotu = double.Parse(Console.ReadLine());
-                   if (finalnotu <= 0 && finalnotu >= 100)
+                   while (true)
 {
-    Console.WriteLine("Sadece 0 ile 100 arası sayıları kullanın.");
+    if (finalnotu <= 0 || finalnotu >= 100)
+    {
+        Console.WriteLine("Sadece 0 ile 100 arası sayıları kullanın.");
+    }
+    else
+    {
+        finalnotu = double.Parse(Console.ReadLine());
+        break;
+    }
 }
-
 
 
                     double ortalama = vizenotu * 0.4 + finalnotu * 0.6;
